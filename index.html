@@ -16,8 +16,11 @@
     <div id="menu-container"></div>
   </div>
 
-  <script>
+  <footer class="text-center py-3 mt-4 border-top">
+    Made by Anirudh Gupta
+  </footer>
 
+  <script>
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("service-worker.js");
     }
@@ -58,8 +61,6 @@
           .catch((err) => console.error("Service worker failed:", err));
       });
     }
-
-
   </script>
 </body>
 
