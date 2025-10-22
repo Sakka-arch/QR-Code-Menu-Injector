@@ -1,9 +1,4 @@
 <script>
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("service-worker.js");
-  }
-
-  // Load menu.json
   fetch("menu.json")
     .then(response => response.json())
     .then(data => {
@@ -15,57 +10,61 @@
         const row = section.querySelector(".row");
 
         data[category].forEach(item => {
-          // Check if item is a pack with nested sections
-          const hasSubsections = item.rice_selection || item.salad_and_accompaniments || item.desserts || item.beverages;
+          // If pack with nested sections
+          if (item.rice_selection || item.salad_and_accompaniments || item.desserts || item.beverages) {
+            const packCard = document.createElement("div");
+            packCard.className = "col-12";
 
-          if (!hasSubsections) {
-            // Regular menu item
-            row.innerHTML += `
-              <div class="col-md-4">
-                <div class="card shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title">${item.name}</h5>
-                    <p class="card-text">${item.price}</p>
-                  </div>
-                </div>
-              </div>
+            let innerHTML = `
+              <div class="card shadow-sm mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">${item.name} - ${item.price}</h5>
             `;
+
+            // Nested sections
+            const sections = [
+              { title: "Rice Selection", data: item.rice_selection },
+              { title: "Salad & Accompaniments", data: item.salad_and_accompaniments },
+              { title: "Desserts", data: item.desserts },
+              { title: "Beverages", data: item.beverages }
+            ];
+
+            sections.forEach(sec => {
+              if (sec.data) {
+                innerHTML += `<h6 class="mt-2">${sec.title}:</h6><div class="row g-2">`;
+                sec.data.forEach(sub => {
+                  innerHTML += `
+                    <div class="col-md-3">
+                      <div class="card p-2 border">
+                        ${sub.name} - ${sub.price}
+                      </div>
+                    </div>
+                  `;
+                });
+                innerHTML += `</div>`;
+              }
+            });
+
+            innerHTML += `</div></div>`; // Close card-body and card
+            packCard.innerHTML = innerHTML;
+            row.appendChild(packCard);
           } else {
-            // Pack item
-            row.innerHTML += `
-              <div class="col-12">
-                <div class="card shadow-sm mb-3">
-                  <div class="card-body">
-                    <h5 class="card-title">${item.name} - ${item.price}</h5>
-                    
-                    ${item.rice_selection ? `<h6>Rice Selection:</h6>
-                      <ul>${item.rice_selection.map(r => `<li>${r.name} - ${r.price}</li>`).join('')}</ul>` : ''}
-
-                    ${item.salad_and_accompaniments ? `<h6>Salad & Accompaniments:</h6>
-                      <ul>${item.salad_and_accompaniments.map(s => `<li>${s.name} - ${s.price}</li>`).join('')}</ul>` : ''}
-
-                    ${item.desserts ? `<h6>Desserts:</h6>
-                      <ul>${item.desserts.map(d => `<li>${d.name} - ${d.price}</li>`).join('')}</ul>` : ''}
-
-                    ${item.beverages ? `<h6>Beverages:</h6>
-                      <ul>${item.beverages.map(b => `<li>${b.name} - ${b.price}</li>`).join('')}</ul>` : ''}
-                  </div>
+            // Normal item
+            const itemCard = document.createElement("div");
+            itemCard.className = "col-md-4";
+            itemCard.innerHTML = `
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">${item.name}</h5>
+                  <p class="card-text">${item.price}</p>
                 </div>
               </div>
             `;
+            row.appendChild(itemCard);
           }
         });
 
         container.appendChild(section);
       });
     });
-
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-      navigator.serviceWorker
-        .register("/service-worker.js")
-        .then((reg) => console.log("Service worker registered:", reg.scope))
-        .catch((err) => console.error("Service worker failed:", err));
-    });
-  }
 </script>
