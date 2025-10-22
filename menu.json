@@ -63,38 +63,35 @@
     { "name": "Herb Naan", "price": "$3.90" },
     { "name": "Cheese Naan", "price": "$5.50" },
     { "name": "Kheema Naan", "price": "$5.50" },
-    { "name": "Bhature", "price": "$6.00" }
-    { "name": "Gluten Free Naan", "price": "$6.00" }
-    { "name": "Aloo Parantha", "price": "$5.00" }
-    { "name": "Kashmiri Naan", "price": "$6.00" }
-    { "name": "Keema Naan", "price": "$6.00" }
+    { "name": "Bhature", "price": "$6.00" },
+    { "name": "Gluten Free Naan", "price": "$6.00" },
+    { "name": "Aloo Parantha", "price": "$5.00" },
+    { "name": "Kashmiri Naan", "price": "$6.00" },
+    { "name": "Keema Naan", "price": "$6.00" },
     { "name": "Masala Kulcha", "price": "$6.00" }
   ],
   "Rice Selection": [
-      { "name": "Lamb/Chicken Biryani", "price": "$16.50" },
-      { "name": "Vegetable Biryani", "price": "$15.00" },
-      { "name": "Saffron Rice", "price": "$4.00" },
-      { "name": "Coconut Rice", "price": "$5.00" },
-      { "name": "Pea Pulao", "price": "$5.00" },
-      { "name": "Kashmiri Pulao ", "price": "$6.00" },
-      { "name": "Mushroom Pulao ", "price": "$6.00" }
-
+    { "name": "Lamb/Chicken Biryani", "price": "$16.50" },
+    { "name": "Vegetable Biryani", "price": "$15.00" },
+    { "name": "Saffron Rice", "price": "$4.00" },
+    { "name": "Coconut Rice", "price": "$5.00" },
+    { "name": "Pea Pulao", "price": "$5.00" },
+    { "name": "Kashmiri Pulao", "price": "$6.00" },
+    { "name": "Mushroom Pulao", "price": "$6.00" }
   ],
   "Salad and Accompaniements": [
     { "name": "Kachumber Salad", "price": "$4.00" },
-    { "name": "Cucumber Raita ", "price": "$3.50" },
-    { "name": "Papadum(4 pieces)", "price": "$2.00" },
+    { "name": "Cucumber Raita", "price": "$3.50" },
+    { "name": "Papadum(4 pieces)", "price": "$2.00" }
   ],
   "desserts": [
-    { "name": "Kulfi", "price": 4.00 },
-    { "name": "Gulab Jamun", "price": 4.00 }
+    { "name": "Kulfi", "price": "$4.00" },
+    { "name": "Gulab Jamun", "price": "$4.00" }
   ],
   "beverages": [
-    { "name": "Plain Lassi", "price": 3.50 },
-    { "name": "Mango Lassi / Rose Lassi", "price": 4.00 },
-    { "name": "Soft Drinks - Cans", "price": 3.50 },
-    { "name": "Drinks - Bottles", "price": 5.00 }
+    { "name": "Plain Lassi", "price": "$3.50" },
+    { "name": "Mango Lassi / Rose Lassi", "price": "$4.00" },
+    { "name": "Soft Drinks - Cans", "price": "$3.50" },
+    { "name": "Drinks - Bottles", "price": "$5.00" }
   ]
-
-  
 }
