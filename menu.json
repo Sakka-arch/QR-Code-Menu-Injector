@@ -79,16 +79,16 @@
     { "name": "Kashmiri Pulao", "price": "$6.00" },
     { "name": "Mushroom Pulao", "price": "$6.00" }
   ],
-  "Salad and Accompaniements": [
+  "Salad and Accompaniments": [
     { "name": "Kachumber Salad", "price": "$4.00" },
     { "name": "Cucumber Raita", "price": "$3.50" },
-    { "name": "Papadum(4 pieces)", "price": "$2.00" }
+    { "name": "Papadum (4 pieces)", "price": "$2.00" }
   ],
-  "desserts": [
+  "Desserts": [
     { "name": "Kulfi", "price": "$4.00" },
     { "name": "Gulab Jamun", "price": "$4.00" }
   ],
-  "beverages": [
+  "Beverages": [
     { "name": "Plain Lassi", "price": "$3.50" },
     { "name": "Mango Lassi / Rose Lassi", "price": "$4.00" },
     { "name": "Soft Drinks - Cans", "price": "$3.50" },
