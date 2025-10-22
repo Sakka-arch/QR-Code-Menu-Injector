@@ -82,7 +82,8 @@
   "Salad and Accompaniments": [
     { "name": "Kachumber Salad", "price": "$4.00" },
     { "name": "Cucumber Raita", "price": "$3.50" },
-    { "name": "Papadum (4 pieces)", "price": "$2.00" }
+    { "name": "Papadum (4 pieces)", "price": "$2.00" },
+    { "name": "Mixed Pickle & Mango Chutney", "price": "$2.50" }
   ],
   "Desserts": [
     { "name": "Kulfi", "price": "$4.00" },
@@ -94,42 +95,17 @@
     { "name": "Soft Drinks - Cans", "price": "$3.50" },
     { "name": "Drinks - Bottles", "price": "$5.00" }
   ],
-    "lunch_packs": [
-      { "name": "Small Lunch Pack", "price": 9.50 },
-      { "name": "Large Lunch Pack", "price": 10.50 }
-    ],
-    "singles_packs": [
-      { "name": "Veggie Pack", "price": 19.50 },
-      { "name": "Meat Pack", "price": 21.50 },
-      { "name": "Meat & Veggie Combo", "price": 20.50 }
-    ],
-    "great_indian_wave_packs": [
-      { "name": "Great Indian Wave Pack (Veg)", "price": 55.00 },
-      { "name": "Great Indian Wave Pack (Non-Veg)", "price": 75.00 }
-    ],
-    "rice_selection": [
-      { "name": "Lamb/Chicken Biryani", "price": 16.00 },
-      { "name": "Vegetable Biryani", "price": 15.00 },
-      { "name": "Saffron Rice", "price": 3.50 },
-      { "name": "Peas Pulao", "price": 6.00 },
-      { "name": "Kashmiri Pulao", "price": 6.50 },
-      { "name": "Mushroom Pulao", "price": 6.50 }
-    ],
-    "salad_and_accompaniments": [
-      { "name": "Achari Kachumber Salad", "price": 4.00 },
-      { "name": "Cucumber Raita", "price": 3.50 },
-      { "name": "Pappadam (4 pieces)", "price": 2.00 },
-      { "name": "Mixed Pickle & Mango Chutney", "price": 2.50 }
-    ],
-    "desserts": [
-      { "name": "Kulfi", "price": 4.00 },
-      { "name": "Gulab Jamun", "price": 4.00 }
-    ],
-    "beverages": [
-      { "name": "Plain Lassi", "price": 3.50 },
-      { "name": "Mango Lassi / Rose Lassi", "price": 4.00 },
-      { "name": "Soft Drinks - Cans", "price": 3.50 },
-      { "name": "Drinks - Bottles", "price": 5.00 }
-    ]
-  
+  "Lunch Packs": [
+    { "name": "Small Lunch Pack", "price": "$9.50" },
+    { "name": "Large Lunch Pack", "price": "$10.50" }
+  ],
+  "Singles Packs": [
+    { "name": "Veggie Pack", "price": "$19.50" },
+    { "name": "Meat Pack", "price": "$21.50" },
+    { "name": "Meat & Veggie Combo", "price": "$20.50" }
+  ],
+  "Great Indian Wave Packs": [
+    { "name": "Great Indian Wave Pack (Veg)", "price": "$55.00" },
+    { "name": "Great Indian Wave Pack (Non-Veg)", "price": "$75.00" }
+  ]
 }
